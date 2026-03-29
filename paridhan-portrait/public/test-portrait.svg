@@ -1,0 +1,31 @@
+<svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="600" fill="#E8F4F8"/>
+  
+  <!-- Body -->
+  <ellipse cx="200" cy="450" rx="80" ry="120" fill="#FFE0BD"/>
+  
+  <!-- Neck -->
+  <rect x="180" y="280" width="40" height="60" fill="#FFD4A3"/>
+  
+  <!-- Head -->
+  <circle cx="200" cy="200" r="80" fill="#FFD4A3"/>
+  
+  <!-- Hair -->
+  <path d="M120,200 Q120,120 200,120 Q280,120 280,200 L280,180 Q280,140 200,140 Q120,140 120,180 Z" fill="#2C1810"/>
+  
+  <!-- Eyes -->
+  <circle cx="170" cy="190" r="8" fill="#000"/>
+  <circle cx="230" cy="190" r="8" fill="#000"/>
+  <circle cx="172" cy="188" r="3" fill="#FFF"/>
+  <circle cx="232" cy="188" r="3" fill="#FFF"/>
+  
+  <!-- Nose -->
+  <path d="M200,200 L195,220 L205,220 Z" fill="#FFB380"/>
+  
+  <!-- Mouth -->
+  <path d="M180,240 Q200,250 220,240" stroke="#C04040" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Shoulders -->
+  <path d="M120,340 L140,400 L260,400 L280,340" fill="#4A90E2"/>
+</svg>
