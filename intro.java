@@ -1,23 +1,37 @@
-package HashMap;
-import java.util.*;
+package Tree;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class intro {
     public static void main(String[] args) {
-        HashMap<Integer , String> mymap = new HashMap<>(); // declearation
-        //insertion put methods
-        mymap.put(1, "Pankaj"); 
-        mymap.put(2, "Prabhat"); 
-        mymap.put(3, "Mohit"); 
-        mymap.put(4, "Piyush"); 
-        mymap.put(5, "Shivam"); 
-        //System.out.println(mymap);
-        //System.out.println(mymap.get(3));
-
-        //---- using of loop in HashMap
-        for(Map.Entry<Integer,String> entry : mymap.entrySet()){
-            System.out.println("key is -->" + entry.getKey());
-            System.out.println("value is -->" + entry.getValue());
+        
+    }
+    class TreeNode<E> {
+        E data;
+        TreeNode left;
+        TreeNode right;
+        public TreeNode(E data){
+            this.data=data;
+            this.left=null;
+            this.right=null;
         }
-      
+    }
+    public ArrayList<Integer> BFS(TreeNode<Integer> root){
+        ArrayList<Integer> res = new ArrayList<>();
+        Queue<TreeNode> que = new LinkedList<>();
+        que.offer(root); //insert data in ques to follow level wise insertion
+        while (! que.isEmpty()) {
+            TreeNode<Integer> node = que.poll();
+            res.add(node.data);
+            if (node.left !=null) {
+                que.offer(node.left);
+            }
+            if (node.right!=null) {
+                que.offer(node.right);
+            }
+        }
+        return res;
     }
 }
